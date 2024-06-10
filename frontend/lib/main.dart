@@ -55,10 +55,10 @@ class KnowWasteApp extends StatelessWidget {
           router ??= AppRouter(ref);
 
           return MaterialApp.router(
-            title: 'KnowWaste',
+            title: 'Vikshit Bharat AI',
             debugShowCheckedModeBanner: false,
             routerDelegate: router!.appRouter.routerDelegate,
-            routeInformationParser: router!.appRouter.routeInformationParser,
+            routeInformationParser: router! ? .appRouter.routeInformationParser,
             routeInformationProvider: router!.appRouter.routeInformationProvider,
             theme: AppThemes.primary(),
           );
